@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy World Teacher's Day - Grade 11 ICT Acacia</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('teachers day.webp') no-repeat center center fixed; /* Update with your background image */
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+            animation: fadeIn 2s;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #message-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Align messages to the top */
+            max-width: 600px;
+            height: 400px; /* Set a fixed height for the message container */
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            overflow-y: auto; /* Allow vertical scrolling */
+            animation: fadeIn 2s;
+        }
+
+        .message {
+            opacity: 0;
+            transition: opacity 1s ease;
+            margin: 10px 0;
+        }
+
+        .message.visible {
+            opacity: 1;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Optional: Adding some padding to the messages */
+        .message {
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1); /* Light background for readability */
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HAPPY WORLD TEACHER'S DAY</h1>
+    <h2>by GRADE 11 ICT ACACIA</h2>
+    <button id="show-messages-btn">READ THE MESSAGE</button>
+
+    <div id="message-container">
+        <div class="message">To Sir James (Programming):<br>Happy World Teachers' Day, Sir James! We want to take this moment to express our deepest appreciation for being such an incredible programming teacher. Your passion for coding and technology shines through in every lesson, making even the most complex concepts accessible and exciting. We know we can be a bit hard-headed at times, but your patience and dedication never waver. You always find creative ways to engage us and ensure we grasp the material, even when it seems challenging. Thank you for your unwavering support and for believing in our potential as future programmers. Your encouragement truly makes a difference in our learning journey!</div>
+        <div class="message">To Ma'am Caselyn (21st Century):<br>Happy World Teachers' Day, Ma'am Caselyn! Today, we want to extend our heartfelt thanks for your dedication to teaching us about the 21st century. Your lessons equip us with the knowledge and understanding we need to navigate the complexities of modern society. You always connect the material to real-world issues, encouraging us to think critically and engage thoughtfully with current events. We appreciate how you foster an inclusive classroom environment, allowing us to express our ideas freely. Thank you for inspiring us to be responsible and informed citizens in this ever-changing world. Your impact on our lives is immeasurable!</div>
+        <div class="message">To Ma'am Pabalate (Earth and Life Science):<br>Happy World Teachers' Day, Ma'am Pabalate! We want to express our heartfelt appreciation for your passion and dedication to teaching Earth and Life Science. Your enthusiasm for the subject is contagious, igniting our curiosity about the natural world. We know we can be a bit of a challenge at times, but your ability to simplify complex concepts makes learning enjoyable and engaging. Your hands-on activities and thoughtful discussions encourage us to explore the intricacies of life and our planet. Thank you for your patience and for nurturing our love for science. Your dedication inspires us to learn and grow!</div>
+        <div class="message">To Ma'am Manzan (Oral Communication):<br>Happy World Teachers' Day, Ma'am Manzan! We would like to take a moment to thank you for your commitment to teaching us the art of effective communication. Your classes have significantly improved our confidence in expressing ourselves, whether through speech or writing. You create a supportive atmosphere where we feel comfortable sharing our thoughts and ideas, and your constructive feedback has helped us grow immensely. We know we can sometimes be difficult students, but your encouragement inspires us to become better communicators. Thank you for your unwavering support and for believing in our potential to succeed!</div>
+        <div class="message">To Ma'am Clerigo (Kumunikasyon):<br>Happy World Teachers' Day, Ma'am Clerigo! We want to express our sincere gratitude for your guidance in the subject of Kumunikasyon. Your lessons have opened our eyes to the importance of effective communication in our everyday lives. We truly appreciate how you make each lesson relevant and engaging, allowing us to connect theory to practice. Your encouragement to participate in discussions and express our ideas has helped us grow as individuals. Thank you for your dedication and for fostering a classroom environment that promotes learning and collaboration. We are grateful to have you as our teacher!</div>
+        <div class="message">To Ma'am Curacho (Empowerment Technology):<br>Happy World Teachers' Day, Ma'am Curacho! We would like to extend our heartfelt thanks for your dedication to teaching us about empowerment technology. Your lessons have provided us with essential digital knowledge and skills that are crucial in today's tech-driven world. We appreciate your patience in guiding us through various tools and platforms, always ensuring we understand their relevance in our lives. Your ability to connect technology with our daily experiences makes learning enjoyable. Thank you for empowering us to use technology responsibly and creatively. Your impact on our lives is truly appreciated!</div>
+        <div class="message">To Sir Denver (General Math):<br>Happy World Teachers' Day, Sir Denver! We want to express our deepest gratitude for your dedication to teaching General Math. Your commitment to making math understandable and enjoyable has had a profound impact on our learning experience. Even when we struggle with certain topics, your patience and clear explanations help us grasp difficult concepts. We appreciate the way you relate math to real-life situations, making it more relevant and engaging. Thank you for your hard work and for always believing in us, even when we can be challenging. Your dedication inspires us to strive for success!</div>
+        <div class="message">To Our Dearest Teachers,<br>Happy World Teachers' Day!<br>We, the students of Grade 11 ICT Acacia, want to take this special day to express our sincere gratitude to all of you. We know that we can be a bit hardheaded at times—whether it's being noisy in class, missing deadlines, or being difficult to handle. But despite that, you never gave up on us. You showed us patience, understanding, and dedication every day, and for that, we are incredibly thankful.<br>You have taught us so much, not just in academics but in life. Even though we sometimes make things harder than they need to be, you still make the effort to ensure that we learn, guiding us with kindness and persistence. You’ve always found ways to break down difficult concepts and explain them so that we could understand. We appreciate how you constantly support us, even when we make mistakes, and how you push us to do better every day.<br>Your patience, especially with a class like ours, is something we deeply admire. We may be a little stubborn, but we truly value everything you do for us—your effort, your guidance, and most of all, your belief in us. We are incredibly lucky to have teachers who never give up, who constantly motivate us, and who care so much about our success, even when we don’t always make it easy.<br>Thank you for all the sacrifices you make, for the endless hours you dedicate to helping us grow. You’ve inspired us to keep pushing forward and never stop learning. We may not always show it, but we are truly grateful for your efforts.<br>So today, we want to say: Thank you for your patience, your understanding, and your endless support. We promise to carry the lessons you’ve taught us in our hearts, not just in the classroom but in life. We are better students because of you.<br>Once again, from the bottom of our hearts, Happy World Teachers' Day!</div>
+    </div>
+
+    <script>
+        document.getElementById('show-messages-btn').addEventListener('click', function() {
+            const messages = document.querySelectorAll('.message');
+            const messageContainer = document.getElementById('message-container');
+            messageContainer.style.display = 'flex'; // Show the message container
+
+            messages.forEach((message, index) => {
+                setTimeout(() => {
+                    message.classList.add('visible'); // Add visible class after delay
+                }, index * 1000); // Stagger the display of messages
+            });
+        });
+    </script>
+</body>
+</html>
+<audio id="background-music" loop>
+    <source src="juan karlos - Through the Years (From Lolo and the Kid) Official Music Video.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+</audio>
+
+<script>
+    document.getElementById('show-messages-btn').addEventListener('click', function() {
+        const messageContainer = document.getElementById('message-container');
+        messageContainer.style.display = 'flex';
+
+        const messages = messageContainer.getElementsByClassName('message');
+        let index = 0;
+
+        function showNextMessage() {
+            if (index < messages.length) {
+                messages[index].classList.add('visible');
+                index++;
+                setTimeout(showNextMessage, 3000); // Show each message for 3 seconds
+            }
+        }
+
+        showNextMessage();
+        document.getElementById('background-music').play(); // Play background music
+    });
+</script>
+</body>
+</html>
